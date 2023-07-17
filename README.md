@@ -24,7 +24,7 @@ The goal of this project is to:
 6. Microsoft PowerBI
 
 # Data collection
-![alt text]
+![alt text](https://github.com/nkwachiabel/Procure_to_Pay/blob/main/Images/Data%20Overview.jpg?raw=true)
 The event log consists of 1696 cases between January 2015 and August 2017. Although, majority of the cases happened in 2017. Each procurement contains the following attributes
 - <b>Document date</b>: 
 - <b>Invoice received</b>: The date the invoice is received from the Vendor
