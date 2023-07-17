@@ -24,7 +24,7 @@ The goal of this project is to:
 6. Microsoft PowerBI
 
 # Data collection
-
+![alt text]
 The event log consists of 1696 cases between January 2015 and August 2017. Although, majority of the cases happened in 2017. Each procurement contains the following attributes
 - <b>Document date</b>: 
 - <b>Invoice received</b>: The date the invoice is received from the Vendor
@@ -38,8 +38,14 @@ The event log consists of 1696 cases between January 2015 and August 2017. Altho
 - <b>Gross Amount</b>: The gross amount for each case
 
 # Data preparation
-
-
+The event log data was cleaned and transformed into a suitable format for process mining. This includes the following:
+The following activities were carried out:
+- Rename the columns to make them easier to reference and understand
+- Melt the data to get the dataframe into the required format for process mining
+- Remove rows with missing times. This is because from the dataset received, those activities do not occur in that particular purchase order.
+- Sort the event log using the unique identifier (<b>Document No.</b>) and Date column. This is to arrange each Purchase document accoring to how the activities were performed (by date)
+- Extracted completed cases. I assumed that the process is complete when the payment has been made (i.e., the last activity is <b>Payment performed</b>).
+- PowerBI Data format. One of the weakness I have noticed when using PowerBI for process mining is that where two activities are performed on the same date, it sorts these activities alphabetically. For example, if the <b>posting date</b> and <b>payment performed</b> activities were performed on the same day, the payment performed activity would come first before posting date even though in jupyter notebook, posting date comes first. To avoid this, I  included an <b>Event_ID</b> column so that to sort the activities properly in Powerbi.
 
 # Process discovery
 
