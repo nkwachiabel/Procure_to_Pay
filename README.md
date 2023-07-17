@@ -65,6 +65,7 @@ Process performance metrics such as cycle time, and lead time were calculated fo
 2. The transition matrix shows the average time it spends moving from one activity to another. The transition matrix shows that it takes an average of 32 days from <i>Document Date</i> activity to <i>1st approval</i>. It takes an average of 7 days from the <i>Invoice Received</i> activity to the <i>Payment performed</i>.
 3. The case duration graph shows that a lot of the cases are completed within 30 days. However, there are some outliers where cases lasts more that 200 days.
 4. <b>Payments</b>: There were 140 cases amounting to $501k which were paid late. There are 400 payments amounting to $383k which are recurring (same Vendor, same amount). Majority of these recurring payments (103) were paid to <i>Vendor 401972</i>.
+
 ![alt text](https://github.com/nkwachiabel/Procure_to_Pay/blob/main/Images/KPIs.jpg?raw=true)
 
 ## Vendor dashboard
