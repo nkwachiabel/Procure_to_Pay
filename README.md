@@ -50,6 +50,7 @@ The following activities were carried out:
 # Output and Visualisations
 ## Process discovery
 ![alt text]
+
 The Graphviz library was used to automatically generate a visual process model based on the event log data. 
 1. <b>Variant analysis</b>: This variant analysis shows how frequently a particular process is followed. From the above, we can see that there is a total of 26 variants. The first 4 variants account for about 83% of all process, Meanwhile 7 variants occur only once. There are some cases which were completed without any approval. These cases have been captured in Variants 1, 3, 9 and 16 comprise 694 cases.
 2. <b>Process graph</b>: The process graph shows how the activity flows from the start of a procurement process to the end. From the process graph, not all the cases need both approval. There are more of 1st approvals than 2nd approvals. In addition, there are four different start cases i.e., <i>Document Date</i>, <i>Invoice Received</i>, <i>1st approval</i>, and <i>Posting Date</i>. 694 payments representing 47% of the cases were made without approval. Out of these payments, 17 were reversals. Out of these payments, 402 (representing all payments made to <i>Vendor 401972</i> were made without approvals.
@@ -67,14 +68,20 @@ Process performance metrics such as cycle time, and lead time were calculated fo
 
 ## Vendor dashboard
 ![alt text]
+
 This dashboard shows information relating to a particular dashboard by using the filter at the top right of the screen.  
 
 ## Case details
 ![alt text]
+
 This dashboard shows information relating to a particular case by using the filter at the top right of the screen.
 
 # Process improvement
-
+Based on the analysis, areas for improvement were identified such as:
+* Process redesign: Due to the lack of approval for majority of these payments, the procurement process should be redesigned to ensure that all payments are pre-approved. This is important to ensure segregation of duties and reduce the possibility of fraud. At least, there should be a limit on the amount that can be paid without approval and a limit when both 1st and 2nd approval is needed.
+* Reducing approval delays: It takes an average of 4 days for the 2nd approver to carry out their task after the 1st approver is done. This causes unnecessary delays to these requests. It is recommended to set come up with maybe a notification to always remind the 2nd approver that a request is pending.
+* Avoid weekend payments: There were 6 instances where a payment was peformed on a weekend. This can be a fraud indicator. It is important to put in place system blockers to avoid instances such as this unless absolutely necessary.
+* Performance monitoring: A lot of time is spend between some activities such as Document Date. Lastly, a performance monitoring process should be put in place to track KPIs relating to the procurement process.
 
 # Limitation
 The dataset provided no information about the users in the process. 
