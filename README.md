@@ -51,8 +51,8 @@ The following activities were carried out:
 ![alt text]
 The Graphviz library was used to automatically generate a visual process model based on the event log data. 
 1. <b>Variant analysis</b>: This variant analysis shows how frequently a particular process is followed. From the above, we can see that there is a total of 26 variants. The first 4 variants account for about 83% of all process, Meanwhile 7 variants occur only once. There are some cases which were completed without any approval. These cases have been captured in Variants 1, 3, 9 and 16 comprise 694 cases, which represents 47% of the cases.
-2. <b>Process graph</b>:
-3. <b>Transition matrix</b>:
+2. <b>Process graph</b>: Not all the cases need both approval. There are more of 1st approvals than 2nd approvals. Four different start cases.
+3. <b>Transition matrix</b>: The transition matrix shows how the events are been handed over from one to another and how frequently this occurs. From the above, it can be seen that <b>Payment performed</b> activity is not followed by any other activity i.e., that is the end of the process. However, all other events can be done before <b>Payment Performed</b> in no particular order. The most frequently occuring activity before <b>Payment performed</b> is the <b>Posting Date</b>. <b>Document Date</b> is mostly followed by <b>Invoice Received</b> and <b>Invoice Received</b> is mostly followed by <b>1st approval</b>. <b>2nd approval</b> is majorly done after <b>1st approval</b>. One thing to note from the transition matrix is that all other event can happen after <b>Posting Date</b>. It begs the question when should a procurement be posted? After approval?
 
 # Performance analysis
 
