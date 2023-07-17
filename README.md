@@ -72,7 +72,7 @@ Process performance metrics such as cycle time, and lead time were calculated fo
 This dashboard shows information relating to a particular dashboard by using the filter at the top right of the screen.  
 
 ## Case details
-![alt text]
+![alt text](https://github.com/nkwachiabel/Procure_to_Pay/blob/main/Images/Case%20dashboard.jpg?raw=true)
 
 This dashboard shows information relating to a particular case by using the filter at the top right of the screen.
 
