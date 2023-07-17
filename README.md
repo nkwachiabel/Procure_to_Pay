@@ -51,17 +51,21 @@ The following activities were carried out:
 ![alt text]
 The Graphviz library was used to automatically generate a visual process model based on the event log data. 
 1. <b>Variant analysis</b>: This variant analysis shows how frequently a particular process is followed. From the above, we can see that there is a total of 26 variants. The first 4 variants account for about 83% of all process, Meanwhile 7 variants occur only once. There are some cases which were completed without any approval. These cases have been captured in Variants 1, 3, 9 and 16 comprise 694 cases.
-2. <b>Process graph</b>: The process graph shows how the activity flows from the start of a procurement process to the end. From the process graph, not all the cases need both approval. There are more of 1st approvals than 2nd approvals. In addition, there are four different start cases i.e., <i>Document Date</i>, <i>Invoice Received</i>, <i>1st approval</i>, and <i>Posting Date</i>. 694 payments representing 47% of the cases were made without approval. Out of these payments, 17 were reversals.
+2. <b>Process graph</b>: The process graph shows how the activity flows from the start of a procurement process to the end. From the process graph, not all the cases need both approval. There are more of 1st approvals than 2nd approvals. In addition, there are four different start cases i.e., <i>Document Date</i>, <i>Invoice Received</i>, <i>1st approval</i>, and <i>Posting Date</i>. 694 payments representing 47% of the cases were made without approval. Out of these payments, 17 were reversals. Out of these payments, 402 (representing all payments made to <i>Vendor 401972</i> were made without approvals.
 3. <b>Transition matrix</b>: The transition matrix shows how the events are been handed over from one to another and how frequently this occurs. From the above, it can be seen that <i>Payment performed</i> activity is not followed by any other activity i.e., that is the end of the process. However, all other events can be done before <i>Payment Performed</i> in no particular order. The most frequently occuring activity before <i>Payment performed</i> is the <i>Posting Date</i>. <i>Document Date</i> is mostly followed by <i>Invoice Received</i> and <i>Invoice Received</i> is mostly followed by <i>1st approval</i>. <i>2nd approval</i> is majorly done after <i>1st approval</i>. One thing to note from the transition matrix is that all other event can happen after <i>Posting Date</i>. It begs the question when should a procurement be posted? After approval?
-4. <b>Other findings</b>: From the above, it can be seen that there are some events which happen on Saturday and Sunday. 6 payments were made on Saturday and 1 on Sunday. The most frequently occuring activity in the weekend was <i>Document Date</i> which occured 156 times
+4. <b>Other findings</b>: From the above, it can be seen that there are some events which happen on Saturday and Sunday. 6 payments were made on Saturday and 1 on Sunday. The most frequently occuring activity in the weekend was <i>Document Date</i> which occured 156 times.
 
 # Performance analysis
-
+![alt text]
+1. 
+1. <b>Payments</b>: There were 140 cases amounting to $501k which were paid late. There are 400 payments amounting to $383k which are recurring (same Vendor, same amount). Majority of these recurring payments (103) were paid to <i>Vendor 401972</i>.
 
 # Vendor dashboard
 
 
 # Process improvement
 
+
 # Limitation
-No information about users
+The dataset provided no information about the users in the process. 
+
