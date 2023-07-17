@@ -58,7 +58,7 @@ The Graphviz library was used to automatically generate a visual process model b
 4. <b>Other findings</b>: From the above, it can be seen that there are some events which happen on Saturday and Sunday. 6 payments were made on Saturday and 1 on Sunday. The most frequently occuring activity in the weekend was <i>Document Date</i> which occured 156 times.
 
 ## Performance analysis
-![alt text]
+![alt text](https://github.com/nkwachiabel/Procure_to_Pay/blob/main/Images/Performance%20analysis.jpg?raw=true)
 
 Process performance metrics such as cycle time, and lead time were calculated for each activity or process step. Lead time provides the information of a duration of an event until another activity is performed.
 1. The average duration in days graph shows which event takes more time on an average. It shows that more time is spent on the <i>1st approval</i> activity and <i>Document Date</i> activity and the least amount on time is spent on the <i>2nd approval</i> activity.
