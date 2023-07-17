@@ -48,7 +48,7 @@ The following activities were carried out:
 - PowerBI Data format. One of the weakness I have noticed when using PowerBI for process mining is that where two activities are performed on the same date, it sorts these activities alphabetically. For example, if the <b>posting date</b> and <b>payment performed</b> activities were performed on the same day, the payment performed activity would come first before posting date even though in jupyter notebook, posting date comes first. To avoid this, I  included an <b>Event_ID</b> column so that to sort the activities properly in Powerbi.
 
 # Output and Visualisations
-### Process discovery
+## Process discovery
 ![alt text]
 The Graphviz library was used to automatically generate a visual process model based on the event log data. 
 1. <b>Variant analysis</b>: This variant analysis shows how frequently a particular process is followed. From the above, we can see that there is a total of 26 variants. The first 4 variants account for about 83% of all process, Meanwhile 7 variants occur only once. There are some cases which were completed without any approval. These cases have been captured in Variants 1, 3, 9 and 16 comprise 694 cases.
@@ -69,7 +69,7 @@ Process performance metrics such as cycle time, and lead time were calculated fo
 ![alt text]
 This dashboard shows information relating to a particular dashboard by using the filter at the top right of the screen.  
 
-# Case details
+## Case details
 ![alt text]
 This dashboard shows information relating to a particular case by using the filter at the top right of the screen.
 
@@ -79,3 +79,13 @@ This dashboard shows information relating to a particular case by using the filt
 # Limitation
 The dataset provided no information about the users in the process. 
 
+# Repository structure
+* 'Data/': Contains the data used for analysis
+* 'Notebook/': Jupyter notebook detailing the data cleaning, process discovery and analysis
+* 'Output/': Includes the PowerBI output and a PDF file
+
+# Contributions
+Contributions to this repository are welcome! If you encounter any issues or have suggestions for improvement, please open an issue or submit a pull request.
+
+# Contact
+For any questions or inquiries, please contact nkwachiabel@gmail.com
