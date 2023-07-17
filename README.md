@@ -48,7 +48,11 @@ The following activities were carried out:
 - PowerBI Data format. One of the weakness I have noticed when using PowerBI for process mining is that where two activities are performed on the same date, it sorts these activities alphabetically. For example, if the <b>posting date</b> and <b>payment performed</b> activities were performed on the same day, the payment performed activity would come first before posting date even though in jupyter notebook, posting date comes first. To avoid this, I  included an <b>Event_ID</b> column so that to sort the activities properly in Powerbi.
 
 # Process discovery
-
+![alt text]
+The Graphviz library was used to automatically generate a visual process model based on the event log data. 
+1. <b>Variant analysis</b>: This variant analysis shows how frequently a particular process is followed. From the above, we can see that there is a total of 26 variants. The first 4 variants account for about 83% of all process, Meanwhile 7 variants occur only once. There are some cases which were completed without any approval. These cases have been captured in Variants 1, 3, 9 and 16 comprise 694 cases, which represents 47% of the cases.
+2. <b>Process graph</b>:
+3. <b>Transition matrix</b>:
 
 # Performance analysis
 
