@@ -47,7 +47,8 @@ The following activities were carried out:
 - Extracted completed cases. I assumed that the process is complete when the payment has been made (i.e., the last activity is <b>Payment performed</b>).
 - PowerBI Data format. One of the weakness I have noticed when using PowerBI for process mining is that where two activities are performed on the same date, it sorts these activities alphabetically. For example, if the <b>posting date</b> and <b>payment performed</b> activities were performed on the same day, the payment performed activity would come first before posting date even though in jupyter notebook, posting date comes first. To avoid this, I  included an <b>Event_ID</b> column so that to sort the activities properly in Powerbi.
 
-# Process discovery
+# Output and Visualisations
+### Process discovery
 ![alt text]
 The Graphviz library was used to automatically generate a visual process model based on the event log data. 
 1. <b>Variant analysis</b>: This variant analysis shows how frequently a particular process is followed. From the above, we can see that there is a total of 26 variants. The first 4 variants account for about 83% of all process, Meanwhile 7 variants occur only once. There are some cases which were completed without any approval. These cases have been captured in Variants 1, 3, 9 and 16 comprise 694 cases.
@@ -55,13 +56,22 @@ The Graphviz library was used to automatically generate a visual process model b
 3. <b>Transition matrix</b>: The transition matrix shows how the events are been handed over from one to another and how frequently this occurs. From the above, it can be seen that <i>Payment performed</i> activity is not followed by any other activity i.e., that is the end of the process. However, all other events can be done before <i>Payment Performed</i> in no particular order. The most frequently occuring activity before <i>Payment performed</i> is the <i>Posting Date</i>. <i>Document Date</i> is mostly followed by <i>Invoice Received</i> and <i>Invoice Received</i> is mostly followed by <i>1st approval</i>. <i>2nd approval</i> is majorly done after <i>1st approval</i>. One thing to note from the transition matrix is that all other event can happen after <i>Posting Date</i>. It begs the question when should a procurement be posted? After approval?
 4. <b>Other findings</b>: From the above, it can be seen that there are some events which happen on Saturday and Sunday. 6 payments were made on Saturday and 1 on Sunday. The most frequently occuring activity in the weekend was <i>Document Date</i> which occured 156 times.
 
-# Performance analysis
+## Performance analysis
 ![alt text]
-1. 
-1. <b>Payments</b>: There were 140 cases amounting to $501k which were paid late. There are 400 payments amounting to $383k which are recurring (same Vendor, same amount). Majority of these recurring payments (103) were paid to <i>Vendor 401972</i>.
 
-# Vendor dashboard
+Process performance metrics such as cycle time, and lead time were calculated for each activity or process step. Lead time provides the information of a duration of an event until another activity is performed.
+1. The average duration in days graph shows which event takes more time on an average. It shows that more time is spent on the <i>1st approval</i> activity and <i>Document Date</i> activity and the least amount on time is spent on the <i>2nd approval</i> activity.
+2. The transition matrix shows the average time it spends moving from one activity to another. The transition matrix shows that it takes an average of 32 days from <i>Document Date</i> activity to <i>1st approval</i>. It takes an average of 7 days from the <i>Invoice Received</i> activity to the <i>Payment performed</i>.
+3. The case duration graph shows that a lot of the cases are completed within 30 days. However, there are some outliers where cases lasts more that 200 days.
+4. <b>Payments</b>: There were 140 cases amounting to $501k which were paid late. There are 400 payments amounting to $383k which are recurring (same Vendor, same amount). Majority of these recurring payments (103) were paid to <i>Vendor 401972</i>.
 
+## Vendor dashboard
+![alt text]
+This dashboard shows information relating to a particular dashboard by using the filter at the top right of the screen.  
+
+# Case details
+![alt text]
+This dashboard shows information relating to a particular case by using the filter at the top right of the screen.
 
 # Process improvement
 
