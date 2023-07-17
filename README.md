@@ -67,7 +67,7 @@ Process performance metrics such as cycle time, and lead time were calculated fo
 4. <b>Payments</b>: There were 140 cases amounting to $501k which were paid late. There are 400 payments amounting to $383k which are recurring (same Vendor, same amount). Majority of these recurring payments (103) were paid to <i>Vendor 401972</i>.
 
 ## Vendor dashboard
-![alt text]
+![alt text](https://github.com/nkwachiabel/Procure_to_Pay/blob/main/Images/Vendor%20dashboard.jpg?raw=true)
 
 This dashboard shows information relating to a particular dashboard by using the filter at the top right of the screen.  
 
