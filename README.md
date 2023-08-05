@@ -49,7 +49,8 @@ The following activities were carried out:
 
 # Output and Visualisations
 ## Process discovery
-![alt text](https://github.com/nkwachiabel/Procure_to_Pay/blob/main/Images/Process%20Discovery.jpg?raw=true) https://github.com/nkwachiabel/Procure_to_Pay/blob/main/Images/Process%20Discovery.jpg
+![alt text](https://github.com/nkwachiabel/Procure_to_Pay/blob/main/Images/Process%20Discovery.jpg?raw=true) 
+![alt text](https://github.com/nkwachiabel/Procure_to_Pay/blob/main/Images/Process%20Discovery.jpg?raw=true)
 
 The Graphviz library was used to automatically generate a visual process model based on the event log data. 
 1. <b>Variant analysis</b>: This variant analysis shows how frequently a particular process is followed. From the above, we can see that there is a total of 26 variants. The first 4 variants account for about 83% of all process, Meanwhile 7 variants occur only once. There are some cases which were completed without any approval. These cases have been captured in Variants 1, 3, 9 and 16 comprise 694 cases.
