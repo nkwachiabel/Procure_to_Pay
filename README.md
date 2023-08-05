@@ -49,8 +49,6 @@ The following activities were carried out:
 
 # Output and Visualisations
 ## Process discovery
-![alt text](https://github.com/nkwachiabel/Procure_to_Pay/blob/main/Images/Process%20Discovery.jpg?raw=true) 
-![alt text](https://github.com/nkwachiabel/Procure_to_Pay/blob/main/Images/Process%20Discovery.jpg?raw=true)
 ![alt text](https://github.com/nkwachiabel/Procure_to_Pay/blob/main/Images/Process%20Discovery%20page.jpg?raw=true)
 
 The Graphviz library was used to automatically generate a visual process model based on the event log data. 
